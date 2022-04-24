@@ -1,17 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-:root{
-    --montserrat: 'Montserrat', sans-serif;
+
+:root {
+    --cor-textos: #000000;
+    --cor-barras: #5b13b9;
+    --botao-login-hero-envformulario: #5b13b9;
+    --botao-login-hero-envformulario-hover: #7d2ae8;
+    --background-dash: rgb(233, 127, 233);
+    --color-basic: #ffffff;
+    --positivo: #008000;
+    --negativo: #ff0000;
+
+
+    --cor-icones: #5b13b9;
+    --cor-bordas-ativas: #ffaa2b;
+
+    --font-padrao: 'montserrat', sans-serif;
+    --tamanhofonte-navbar-footer: 1em;
+    --tamanhofonte-sessoes-hero: 2.25em;
+    --tamanhofonte-textos: 1.375em;
+    --tamanhofonte-container: 24px;
+    --fonte--label: 14px;
+    --fonte--cards: 12px;
+
 }
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat" , sans-serif;
+    font-family: var(--font-padrao)
 }
 
-.dashboard .container{
+.dashboard .container {
     display: flex;
     align-items: center;
     justify-self: center;
@@ -19,13 +41,13 @@
     max-width: 800px;
     width: 100vw;
     height: 100%;
-    background-color: white;
+    background-color: var(--color-basic);
     margin: 0 auto;
     padding: 100px 0;
     border-radius: 10px;
 }
- 
-.container .form-content{
+
+.container .form-content {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -34,15 +56,15 @@
     justify-content: center;
 }
 
-.container .form-content h2{
-    font-size: 24px;
+.container .form-content h2 {
+    font-size: var(--tamanhofonte-container);
     font-weight: 700;
     text-align: center;
-    color: #7d2ae8;
+    color: var(--botao-login-hero-envformulario-hover);
     margin: 10px 0px;
 }
 
-.form-content .input-boxes{
+.form-content .input-boxes {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -50,7 +72,7 @@
     width: 100%;
 }
 
-form .form-content .input-box{
+form .form-content .input-box {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -59,97 +81,97 @@ form .form-content .input-box{
     margin: 10px 0px;
 }
 
-.form-content .input-box input{
+.form-content .input-box input {
     height: 100%;
     width: 100%;
     outline: none;
     border: none;
     padding: 0px 10px;
-    font-size: 17px;
+    font-size: var(--tamanhofonte-navbar-footer);
     font-weight: 400;
     border-bottom: 3px solid gray;
 }
 
 .form-content .input-box i {
     font-size: 17px;
-    color: #7d2ae8;
+    color: var(--botao-login-hero-envformulario-hover);
     padding: 10px;
 }
 
 .form-content .input-box input:focus,
-.form-content .input-box input:valid{
-    border-color: orange;
+.form-content .input-box input:valid {
+    border-color: var(--positivo);
 }
 
-form .form-content .text{
+form .form-content .text {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    font-size: 14px;
+    font-size: var(--tamanhofonte-navbar-footer);
     font-weight: 400;
-    color: #333;
+    color: var(--cor-textos);
     padding: 10px 0px;
 }
 
-form .form-content .text input[type='checkbox']{
+form .form-content .text input[type='checkbox'] {
     transform: scale(1.4);
     margin: 0 10px;
 }
 
-form .form-content .containner-btn .btnEnviar{
+form .form-content .containner-btn .btnEnviar {
     display: flex;
     align-items: center;
     justify-content: end;
     width: 50%;
 }
 
-form .form-content .containner-btn .btnEnviar input{
+form .form-content .containner-btn .btnEnviar input {
     font-family: var(--montserrat);
-    font-size: 18px;
+    font-size: var(--tamanhofonte-textos);
     text-transform: uppercase;
     width: 300px;
     height: 40px;
     margin: 10px 0px;
     border-radius: 5px;
     border: none;
-    background: #7d2ae8;
-    color: white;
+    background: var(--botao-login-hero-envformulario);
+    color: var(--color-basic);
     cursor: pointer;
 }
 
-form .containner-btn{
+form .containner-btn {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;    
+    width: 100%;
 }
 
-form .input-boxes input[type="checkbox"]{
+form .input-boxes input[type="checkbox"] {
     margin: 0 10px 0 0;
 }
 
-form .containner-btn .text a{
+form .containner-btn .text a {
     text-decoration: none;
-    color: black;
-    font-size: 18px;
+    color: var(--cor-textos);
+    font-size: var(--tamanhofonte-textos);
 }
 
-form .form-content .text-cadastrado{
+form .form-content .text-cadastrado {
     width: 100%;
     padding: 10px 0px;
 }
 
-form .form-content .text-cadastrado p{
+form .form-content .text-cadastrado p {
     text-align: center;
 }
 
-form .form-content .text-cadastrado label a{
+form .form-content .text-cadastrado label a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: var(--cor-textos);
 }
 
-form .form-content .text-cadastrado label a:hover{
+form .form-content .text-cadastrado label a:hover {
     border-bottom: 1px solid #7d2ae8;
 }

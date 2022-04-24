@@ -4,7 +4,7 @@
     box-sizing: border-box;
 } */
 
-:root{
+:root {
     --form-border: rgba(72, 71, 71, 0.25);
     --textoLabel: #000000;
     --textoInput: #000000;
@@ -14,6 +14,12 @@
     --btnBg: rgb(170, 18, 181);
     --btnBgHover: rgb(144, 15, 153);
     --socialMedia: #523697;
+    --color-erro: #ff0000;
+
+    --fonte--formulario: 2.25em;
+    --fonte--label: 14px;
+    --fonte--erro: 12px;
+
 }
 
 /* 
@@ -26,30 +32,31 @@ body {
     padding: 10px;
 } */
 
-.contato-container{
+.contato-container {
     margin: 0 auto;
     width: 80%;
     display: flex;
     align-items: center;
 }
 
-.contato-container .contato-header{
+.contato-container .contato-header {
     width: 60%;
     display: flex;
     flex-direction: column;
     margin-left: 15px;
 }
 
-.contato-container .contato-header h2{
-    font-size: 36px;
+.contato-container .contato-header h2 {
+    font-size: var(--fonte--formulario);
     margin: 15px 0;
 }
 
-.contato-container .contato-header .contato-social i{
-    font-size: 36px;
+.contato-container .contato-header .contato-social i {
+    font-size: var(--fonte--formulario);
     padding: 10px;
     color: var(--socialMedia);
 }
+
 form {
     margin: 15px auto;
     width: 450px;
@@ -60,14 +67,14 @@ form {
     border-radius: 5px;
 }
 
-.input-box{
+.input-box {
     display: flex;
     flex-direction: column;
     padding: 15px;
 }
 
 label {
-    font-size: 14px;
+    font-size: var(--fonte--label);
     font-weight: 700;
     padding: 5px 0;
     text-transform: uppercase;
@@ -78,7 +85,7 @@ input {
     width: 100%;
     height: 30px;
     outline: none;
-    font-size: 14px;
+    font-size: var(--fonte--label);
     padding: 0 10px;
     border: none;
     border-bottom: 2px solid var(--borderInput);
@@ -86,20 +93,20 @@ input {
 }
 
 input:active,
-input:focus{
+input:focus {
     border-bottom: 2px solid var(--borderInputFocus);
 }
 
-textarea{
+textarea {
     width: 100%;
     outline: none;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: var(--fonte--label);
     border: 2px solid var(--borderInput);
 }
 
 textarea:active,
-textarea:focus{
+textarea:focus {
     border: 2px solid var(--borderInputFocus);
 }
 
@@ -107,9 +114,9 @@ button {
     width: 250px;
     border: none;
     background: var(--btnBg);
-    color: white;
+    color: var(--btnColor);
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: var(--fonte--label);
     font-weight: 700;
     border-radius: 20px;
     padding: 10px;
@@ -118,13 +125,13 @@ button {
     transition: 0.3s ease;
 }
 
-button:hover{
+button:hover {
     background: var(--btnBgHover);
 }
 
-.erro-msg{
-    font-size: 12px;
+.erro-msg {
+    font-size: var(fonte--erro);
     font-weight: 700;
-    color: red;
+    color: var(--color-erro);
     padding-top: 5px;
 }

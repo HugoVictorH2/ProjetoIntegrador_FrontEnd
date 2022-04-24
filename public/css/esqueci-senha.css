@@ -1,14 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-:root{
-    --montserrat: 'Montserrat', sans-serif;
+:root {
+    --cor-textos: #000000;
+    --cor-barras: #5b13b9;
+    --botao-login-hero-envformulario: #5b13b9;
+    --botao-login-hero-envformulario-hover: #7d2ae8;
+    --background-dash: rgb(233, 127, 233);
+    --color-basic: #ffffff;
+    --positivo: #008000;
+    --negativo: #ff0000;
+    --icones: #c3c3c3;
+    --menu-lista: #808080;
+
+
+
+    --cor-bordas-ativas: #ffaa2b;
+
+    --font-padrao: 'montserrat', sans-serif;
+    --tamanhofonte-navbar-footer: 1em;
+    --tamanhofonte-sessoes-hero: 2.25em;
+    --tamanhofonte-textos: 1.375em;
+    --tamanhofonte-container: 24px;
+    --fonte--label: 14px;
+    --fonte--cards: 12px;
+
+    --transition-05: all 0.5s ease;
+    --transition-03: all 0.3s ease;
+    --transition-02: all 0.2s ease;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat" , sans-serif;
+    font-family: var(--font-padrao);
 }
 
 body {
@@ -16,41 +41,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #c3c3c3;
+    background: var(--color-basic);
     padding: 30px;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-self: center;
     max-width: 400px;
     width: 100%;
-    background-color: white;
+    background: var(--color-basic);
     padding: 40px 30px;
     border-radius: 10px;
 }
 
-.container form{
+.container form {
     height: 100%;
     width: 100%;
-    background: #fff; 
+    background: var(--color-basic);
 }
 
-.container .form-content{
+.container .form-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-form .form-content .title{
+form .form-content .title {
     position: relative;
-    font-size: 24px;
+    font-size: var(--tamanhofonte-container);
     font-weight: 700;
-    color: #5b13b9;
+    color: var(--cor-barras)
 }
 
-form .form-content .input-boxes{
+form .form-content .input-boxes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +83,7 @@ form .form-content .input-boxes{
     margin-top: 30px;
 }
 
-form .form-content .input-box{
+form .form-content .input-box {
     display: flex;
     align-items: center;
     height: 50px;
@@ -67,48 +92,48 @@ form .form-content .input-box{
     position: relative;
 }
 
-.form-content .input-box input{
+.form-content .input-box input {
     height: 100%;
     width: 100%;
     outline: none;
     border: none;
     padding: 0px 30px;
-    font-size: 17px;
+    font-size: var(--tamanhofonte-textos);
     font-weight: 400;
     border-bottom: 2px solid gray;
 }
 
 .form-content .input-box input:focus,
-.form-content .input-box input:valid{
-    border-color: orange;
+.form-content .input-box input:valid {
+    border-color: var(--cor-bordas-ativas);
 }
 
 .form-content .input-box i {
     position: absolute;
-    font-size: 17px;
-    color: #7d2ae8;
+    font-size: var(--tamanhofonte-textos);
+    color: var(--cor-barras);
 }
 
-form .form-content .input-boxes .button{
-    color: white;
+form .form-content .input-boxes .button {
+    color: var(--color-basic);
     margin-top: 40px;
 }
 
-form .form-content .text{
+form .form-content .text {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: var(--fonte--label);
     font-weight: 400;
-    color: #333;
+    color: var(--cor-textos);
 }
 
-form .form-content .text a{
+form .form-content .text a {
     text-decoration: none;
 }
 
-form .form-content .input-boxes .button input{
-    color: white;
-    background: #7d2ae8;
+form .form-content .input-boxes .button input {
+    color: var(--color-basic);
+    background: var(--botao-login-hero-envformulario);
     border-radius: 5px;
     border: none;
     padding: 0;
@@ -116,6 +141,6 @@ form .form-content .input-boxes .button input{
     transition: all 0.4s ease;
 }
 
-form .form-content .input-boxes .button input:hover{
-    background: #5b13b9;
+form .form-content .input-boxes .button input:hover {
+    background: var(--botao-login-hero-envformulario-hover);
 }

@@ -1,9 +1,29 @@
-.hero{
-    
+:root {
+    --cor-textos: #000000;
+    --cor-barras: #5b13b9;
+    --botao-login-hero-envformulario: #5b13b9;
+    --botao-login-hero-envformulario-hover: #7d2ae8;
+    --background-dash: rgb(233, 127, 233);
+    --color-basic: #ffffff;
+
+
+    --cor-icones: #5b13b9;
+    --cor-bordas-ativas: #ffaa2b;
+
+    --fonte-padrao: 'montserrat', sans-serif;
+    --tamanhofonte-navbar-footer: 1em;
+    --tamanhofonte-sessoes-hero: 2.25em;
+    --tamanhofonte-textos: 1.375em;
+    --tamanhofonte-container: 24px;
+    --fonte--label: 14px;
+}
+
+.hero {
+
     width: 100vw;
 }
 
-.hero-container{
+.hero-container {
     margin: 0 auto;
     width: 80%;
     display: flex;
@@ -11,18 +31,18 @@
     justify-content: space-between;
 }
 
-.hero-titulo{
+.hero-titulo {
     padding: 20px;
     width: 50%;
 }
 
-.hero-titulo h2{
-    font-size: 36px;
+.hero-titulo h2 {
+    font-size: var(--tamanhofonte-sessoes-hero);
     font-weight: 700;
-    font-family: sans-serif;
+    font-family: var(--fonte-padrao);
 }
 
-.hero-titulo span{
+.hero-titulo span {
     display: block;
     border: 1px solid transparent;
     background: tomato;
@@ -30,27 +50,27 @@
     width: 200px;
     height: 50px;
     margin-top: 15px;
-    border-radius: 100px;    
+    border-radius: 100px;
     cursor: pointer;
 }
 
-.hero-titulo .saibamais{
+.hero-titulo .saibamais {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.saibamais a{
+.saibamais a {
     text-decoration: none;
-    color: white;
+    color: var(--color-basic);
 }
 
-.hero-titulo span p{
-    font-size: 22px;
+.hero-titulo span p {
+    font-size: var(--tamanhofonte-textos);
     font-weight: bold;
 }
 
-.hero-image img{
+.hero-image img {
     width: 100%;
     max-width: 450px;
     margin: 15px 0;

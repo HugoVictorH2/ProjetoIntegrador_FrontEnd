@@ -1,102 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-:root{
-    --montserrat: 'Montserrat', sans-serif;
+:root {
+    --cor-textos: #000000;
+    --cor-barras: #5b13b9;
+    --botao-login-hero-envformulario: #5b13b9;
+    --botao-login-hero-envformulario-hover: #7d2ae8;
+    --background-dash: rgb(233, 127, 233);
+    --color-basic: #ffffff;
+
+
+    --cor-icones: #5b13b9;
+    --cor-bordas-ativas: #ffaa2b;
+
+    --fonte-padrao: 'montserrat', sans-serif;
+    --tamanhofonte-navbar-footer: 1em;
+    --tamanhofonte-sessoes-hero: 2.25em;
+    --tamanhofonte-textos: 1.375em;
+    --tamanhofonte-container: 24px;
+
+
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
-    background-color: white;
+    background-color: var(--color-basic);
     box-sizing: border-box;
-    font-family: var(--montserrat);
+    font-family: var(--fonte-padrao);
 }
 
-footer{
+footer {
     margin: 0 auto;
     width: 100vw;
     display: flex;
     align-items: center;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
-.container-footer{
+.container-footer {
     display: flex;
     width: 80%;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: var(--color-basic);
     justify-content: space-between;
 }
 
-.container-footer h2{
-    font-size: 16px;
+.container-footer h2 {
+    font-size: var(--tamanhofonte-navbar-footer);
     margin: 5px 5px;
 }
 
-.container-footer p{
+.container-footer p {
     margin: 5px 0px;
     padding: 5px 5px;
     text-align: justify;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     max-width: 200px;
     width: 15%;
-    font-size: 12px;
+    font-size: (--tamanhofonte-navbar-footer);
     margin: 20px 15px;
 }
 
-.card .contatos{
+.card .contatos {
     display: flex;
     flex-wrap: wrap;
 }
 
-.contato__icones{
+.contato__icones {
     display: block;
     width: 25px;
     margin: 10px 5px;
 }
 
-.card__servicos{
+.card__servicos {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.list_service{
+.list_service {
     list-style: none;
     margin-bottom: 5px;
 }
 
 .list_service a {
     text-decoration: none;
-    color: black;
+    color: var(--cor-textos);
 }
 
-.card .rede_social{
+.card .rede_social {
     display: flex;
     flex-wrap: wrap;
 }
 
-.redesocial__icones{
+.redesocial__icones {
     display: block;
     width: 25px;
     margin: 10px 5px;
 }
 
-.creditos{
+.creditos {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--color-basic);
 }
 
-.creditos p{
-    font-family: var(--montserrat);
-    font-size: 12px;
+.creditos p {
+    font-family: var(--fonte-padrao);
+    font-size: var(--tamanhofonte-navbar-footer);
     font-weight: bold;
     margin: 5px;
     padding: 10 10px;
