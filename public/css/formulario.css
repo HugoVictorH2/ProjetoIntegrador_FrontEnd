@@ -15,6 +15,14 @@
     --btnBgHover: rgb(144, 15, 153);
     --socialMedia: #523697;
     --color-erro: #ff0000;
+    --cor-textos: #000000;
+    --cor-barras: #5b13b9;
+    --botao-login-hero-envformulario: #5b13b9;
+    --botao-login-hero-envformulario-hover: #7d2ae8;
+    --background-dash: rgb(233, 127, 233);
+    --color-basic: #ffffff;
+    --positivo: #008000;
+    --negativo: #ff0000;
 
     --fonte--formulario: 2.25em;
     --fonte--label: 14px;
@@ -113,8 +121,8 @@ textarea:focus {
 button {
     width: 250px;
     border: none;
-    background: var(--btnBg);
-    color: var(--btnColor);
+    background: var(--cor-barras);
+    color: var(--color-basic);
     text-transform: uppercase;
     font-size: var(--fonte--label);
     font-weight: 700;

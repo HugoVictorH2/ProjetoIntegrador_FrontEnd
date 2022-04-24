@@ -42,7 +42,7 @@
     padding: 10px;
     margin: 10px 0;
     margin-left: 10px;
-    border-left: 8px solid blue;
+    border-left: 8px solid var(--cor-barras);
 }
 
 .container-sobre .card-container {
@@ -53,7 +53,7 @@
 
 .container-sobre .sobre-card {
     border: 1px solid gray;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid var(--cor-barras);
     max-width: 350px;
     height: 350px;
     width: calc(100% / 3 - 20px);

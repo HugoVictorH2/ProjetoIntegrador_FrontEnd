@@ -75,7 +75,7 @@
     font-size: var(--tamanhofonte-sessoes-hero);
     padding: 10px;
     margin-left: 10px;
-    border-left: 8px solid blue;
+    border-left: 8px solid var(--cor-barras);
 }
 
 .container_servico .icone {

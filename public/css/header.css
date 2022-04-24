@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --cor-textos: #000000;
     --cor-barras: #5b13b9;

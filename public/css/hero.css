@@ -45,7 +45,7 @@
 .hero-titulo span {
     display: block;
     border: 1px solid transparent;
-    background: tomato;
+    background: var(--cor-barras);
     text-align: center;
     width: 200px;
     height: 50px;
